@@ -1,15 +1,52 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# ==========================================================
+#  Directorio de Contactos - Android (Java + SQLite)
+#  Todo lo que NO se versiona. Lo que sí se versiona:
+#  codigo fuente, recursos, *.gradle.kts, libs.versions.toml
+#  y el Gradle Wrapper (gradlew + gradle/wrapper/*).
+# ==========================================================
+
+# --- Rutas locales de la maquina (SDK de Android) ---------
+# CRITICO: contiene la ruta del SDK de quien lo genero.
+# Android Studio lo recrea solo al abrir el proyecto.
 local.properties
+
+# --- Salidas de compilacion -------------------------------
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# --- Cache de Gradle --------------------------------------
+.gradle/
+.kotlin/
+
+# --- Android Studio / IntelliJ ----------------------------
+# Se ignora la carpeta entera: Android Studio la regenera
+# al importar el proyecto. Asi nadie hereda tu JDK, tus
+# emuladores ni tus configuraciones de ejecucion.
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# --- Firma de la app (NUNCA subir claves) -----------------
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+
+# --- Sistema operativo ------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs y temporales ------------------------------------
+*.log
+*.hprof
+*.bak
+*~
