@@ -34,6 +34,15 @@ captures/
 *.ipr
 *.iws
 
+# --- Claude Code ------------------------------------------
+.claude/
+CLAUDE.md
+.mcp.json
+
+# --- Documentacion interna del proyecto -------------------
+# Especificacion/rubrica: es material de trabajo, no del codigo.
+PROYECTO_DIRECTORIO_CONTACTOS_1.md
+
 # --- Firma de la app (NUNCA subir claves) -----------------
 *.jks
 *.keystore
